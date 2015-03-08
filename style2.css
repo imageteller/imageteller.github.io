@@ -1,0 +1,146 @@
+/***** css reset *****/
+body {
+    margin:0;
+    padding:0;
+}
+
+ul {margin:0;
+    padding:0;
+    }
+li {
+    list-style: none;
+}
+
+a {text-decoration: none;
+    
+}
+a:hover{text-decoration-color: black;}
+
+/***** css reset *****/
+
+
+body {
+    background-image: url(/images/bg.png);
+}
+
+
+.wrapper {
+    
+    width: 920px;
+    margin: 50px auto;
+    background-color: white;
+    box-shadow: 3px #ccc;
+    background-image: url(images/logo-bg.png); 
+    background-repeat: no-repeat;
+    background-position: -60px -90px;
+   /* border: 1px solid black;*/
+
+}
+
+.header {
+    
+    position:relative;
+
+    margin: 30px;
+
+    
+
+
+}
+
+.header .logo {
+
+    position:absolute;
+    margin:20px;
+
+}
+
+.header .gnb {
+
+    position: absolute;
+    right:0;
+    top:0;
+
+
+}
+
+.header .gnb li {
+    float:left;
+    margin-left:20px;
+
+
+}
+
+.header .gnb li a {
+    display:block;
+    padding: 10px 20px;
+    margin-top:20px;
+    border-radius: 30px;
+    color: #333;
+    background-color: #efefef;
+    
+    
+}
+
+
+.header .gnb li a:click {
+    display:block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    background-color: black;
+    
+}
+
+
+
+.contents {
+position:relative;
+height :500px;
+}
+    
+    .name {
+        text-align: center;
+        vertical-align: center;
+        display: block;
+        font-size: 14pt;
+        margin:20px auto;
+        padding :10px;
+        border-radius: 10px;
+        border: 2px solid skyblue;
+        
+    }
+
+
+.contents .biglogo{
+        position:absolute;
+        margin:auto;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+
+    }
+
+
+.footer {
+    position:relative;
+    height:70px;
+
+    background-color: #efefef;
+}
+
+.footer .sns {
+    position:absolute;
+    right:0;
+
+    top:0;
+
+    padding-right: 15px;
+
+
+}
+
+.footer .sns .sns-icon{
+        width: 70px;
+}

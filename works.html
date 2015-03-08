@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VOMBOOK</title>
+        <link rel="stylesheet" href="style.css">
+        
+        <!--JQuery 를 먼저 불러온다.>
+        
+        <!-- jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js">
+        
+        </script>
+        
+        
+        <!--Plugin-->
+        <script src="libs/bxslider/jquery.bxslider.min.js"></script>
+        <link rel="stylesheet" href="libs/bxslider/jquery.bxslider.css">
+        
+        <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+        <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css">
+        
+
+        
+    </head>
+    
+    
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <a class="logo" href="index.html"><img src="images/logo.png"></a>
+                <ul class="gnb">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="works.html">WORKS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            
+            </div>
+            <div class="contents">
+                
+                <div class="category">
+                
+                    <a data-slide-index="0">Photo</a>
+                    <a data-slide-index="1">Illust</a>
+                    <a data-slide-index="2">Graphic</a>
+                </div>
+                
+                <div class="works-list">
+                    <div>
+                        <a rel="p0" href="works/aaa.jpg"><img src="works/aaa-thumb.jpg"></a>
+                        <a rel="p0" href="works/bbb.jpg"><img src="works/bbb-thumb.jpg"></a>
+                        <a rel="p0" href="works/ccc.jpg"><img src="works/ccc-thumb.jpg"></a>
+                        <a rel="p0" href="works/ddd.jpg"><img src="works/ddd-thumb.jpg"></a>
+                        <a rel="p0" href="works/eee.jpg"><img src="works/eee-thumb.jpg"></a>
+                        <a rel="p0" href="works/fff.jpg"><img src="works/fff-thumb.jpg"></a>
+                        <a rel="p0" href="works/ggg.jpg"><img src="works/ggg-thumb.jpg"></a>
+                    </div>
+                    
+                    <div>
+                        <a rel="p1" href="works/hhh.jpg"><img src="works/hhh-thumb.jpg"></a>
+                        <a rel="p1" href="works/iii.jpg"><img src="works/iii-thumb.jpg"></a>
+                        <a rel="p1" href="works/jjj.jpg"><img src="works/jjj-thumb.jpg"></a>
+                        <a rel="p1" href="works/aaa.jpg"><img src="works/aaa-thumb.jpg"></a>
+                        <a rel="p1" href="works/bbb.jpg"><img src="works/bbb-thumb.jpg"></a>
+                        <a rel="p1" href="works/ccc.jpg"><img src="works/ccc-thumb.jpg"></a>
+                    </div>
+                    
+                    <div>
+                        <a rel="p2" href="works/ddd.jpg"><img src="works/ddd-thumb.jpg"></a>
+                        <a rel="p2" href="works/eee.jpg"><img src="works/eee-thumb.jpg"></a>
+                        <a rel="p2" href="works/fff.jpg"><img src="works/fff-thumb.jpg"></a>
+                        <a rel="p2" href="works/ggg.jpg"><img src="works/ggg-thumb.jpg"></a>
+                        <a rel="p2" href="works/hhh.jpg"><img src="works/hhh-thumb.jpg"></a>
+                        <a rel="p2" href="works/iii.jpg"><img src="works/iii-thumb.jpg"></a>
+                        <a rel="p2" href="works/jjj.jpg"><img src="works/jjj-thumb.jpg"></a>
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+            <div class="footer">Vomjam 2015 </div>
+        </div>
+
+        
+                
+        <!-- 불러온 jQuery를 사용하는 부분. body 끝나는 부분에 작성한다. -->
+        <!-- ('.선택자')와      .메소드(확장되는 기능,옵션); -->
+        <script>
+            
+
+                        
+            $('.works-list').bxSlider({
+                pagerCustom: '.category',
+                controls:false,
+                mode:'fade'
+                });
+            $('.works-list a').fancybox()
+
+
+            
+       
+        </script>
+        
+
+    </body>
+</html>

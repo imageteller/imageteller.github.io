@@ -1,94 +1,171 @@
-/* css reset */
+body {
+    background-image: url(images/bg.png);
+    }
 
-body,ul
 
-{
-    margin: 0;
-    padding: 0;
-}
-    @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
- 
-    
-h1, h2, h3, h4, h5, h6, p, {
-    font-family: 'Nanum Gothic';
+ul {
     margin:0;
-    padding:0;    
-    
+    padding:0;
+ 
 }
 
 li {
-    list-style: none;
-}
-
-h2,a {
-    font-family:'Nanum Gothic';
-    font-size:12pt;
-    font-weight: 600;
-    color:white;
-    text-decoration: none;
-}
-
-
-/**************************************/
-
-body {
-    background-color: #white;
-}
-
-.navi {
-    width: 100%;
-    height:50px;
-    position: relative;
-    top:0;
-    left:0;
-    background-color: #ddd;
-    border-bottom: 1px solid white;
-    z-index: 100;
-
-
-}
-
-.logo {
-    width:200px;
-    height:40px;
-    background-color: transparent;
-    float:left;
-    margin-left: 20px;
-
-}
-.navi .menu {
-    position:absolute;
-    top:0;
-    right:0;
-    margin-right:20px;
-}
-.navi li {
-    display:block;
-    padding:0 25px;
-    float:left;
-    height:50px;
-    line-height:50px;
-}
-
-.slide {
-    width:100%;
-    height:400px;
-    background-color: #333;
-    z-index: 1;
+    list-style-type: none;
+    
     
 }
 
 .wrapper{
-    width:940px;
-    height:1000px;
-    background-color: white;
-    margin: 0 auto;
+    background-coloer: white;
+    border: 1px solid #999;
+    width: 1140px;
+    margin: 50px auto;
+    background-image: url(images/logo-bg.png);
+    background-repeat: no-repeat;
+    background-position: -90px -60px;
 }
-.thumbnail{
-    width:300px;
-    height:240px;
-    margin:10px 0 0 10px;
-    background-color: rgba(100,100,100,0.1);
-    float:left;
-    border-bottom: 1px solid #333;
+
+.header{
+    position: relative;
+    margin:30px;
+
+
 }
+
+.header .gnb {
+    position: absolute;
+    right:0;
+    top:0;
+
+    }
+
+.header .gnb li{
+    float: left;
+    margin-left: 10px;
+
+}
+
+.header .gnb li a {
+    padding: 15px 20px;
+    display: block;
+    border-radius: 40px;
+    text-decoration: none;
+    color: #333;
+    background: #efefef;
+
+/*inline은 좌우 패딩만 먹고 상하 패딩만 먹는다. 그래서 display: block을 해줘야한다. */
+}
+
+.header .gnb li a:hover{
+    background-color: #999;
+    color: white;
+    
+}
+
+
+/* Main */
+
+.cover {
+    height:500px;
+    position: relative;
+}
+
+
+.cover .big-logo {
+    position: absolute;
+    
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin:auto;
+    width:50px;
+
+
+}
+
+.cover .big-logo.show {
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 800px;
+
+
+}
+
+
+/* About */
+
+/* Works */
+
+/* Contact */
+
+.wow {
+    
+    width :800px;
+    margin : 0 auto;
+    
+}
+
+
+.category {
+
+    padding: 20px;
+    text-align: center;
+}
+
+.category a {
+    background-color:#ddd;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+
+
+.category a.active {
+    background-color: #ff6600;
+    color: white;
+}
+
+.works-list a  {
+    
+    background-color: black;
+    width:20%;
+    display:block;
+    float: left;
+    overflow:hidden;
+    
+}
+
+.works-list a:hover img  {
+    transform: scale(1.2); 
+
+    transition: transform 1s;
+}
+
+.works-list a img {
+    width:100%;
+    vertical-align: top;
+    transform: scale(1);
+
+}
+
+
+
+
+
+
+.footer {
+    background-color: #efefef;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #999;
+}
+    
+
+
